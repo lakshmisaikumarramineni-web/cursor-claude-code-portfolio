@@ -8,9 +8,9 @@ polished retelling.
 ## Tools installed
 
 - **Cursor IDE** — the code editor itself
-- **Node.js** (LTS) — required as a dependency for installing Claude Code via npm
+- **Node.js** (LTS) — required as a dependency for installing Claude Code and Codex via npm
 - **Claude Code CLI** (v2.1.199) — Anthropic's terminal-based AI coding agent
-- **Codex** — *(in progress — see Next Steps)*
+- **OpenAI Codex CLI** (v0.142.5, GPT-5.5) — OpenAI's terminal-based AI coding agent
 
 ## Steps completed
 
@@ -24,6 +24,11 @@ polished retelling.
 6. Authenticated Claude Code using an Anthropic Console account (API billing),
    since I don't have a paid Claude subscription
 7. Successfully logged in and reached the Claude Code interactive prompt
+8. Installed OpenAI Codex CLI via npm (`npm install -g @openai/codex`)
+9. Launched Codex, let it complete its sandbox setup, and it authenticated
+   automatically without a manual login step
+10. Ran a live test prompt ("what is 2+2") — Codex responded correctly,
+    confirming a fully working install
 
 ## Issues I ran into (and how I solved them)
 
@@ -79,6 +84,14 @@ that point via the "Welcome back!" screen and account details Claude Code
 displayed. Adding a small amount of credit (~$5, pay-as-you-go, no
 subscription) would resolve this if a live test is needed.
 
+**8. Codex, by contrast, installed cleanly**
+Worth noting: once Node.js and npm were already working (from setting up
+Claude Code), installing Codex was almost frictionless — one npm command,
+an automatic sandbox setup, and it authenticated without needing a manual
+login flow at all. A useful reminder that a lot of the earlier pain was
+one-time environment setup, not something inherent to installing AI coding
+tools.
+
 ## What I learned
 
 Most of the real difficulty here had nothing to do with AI tools
@@ -89,7 +102,10 @@ rather than assuming the first fix would work, and being willing to abandon
 one approach (the GUI extension) for a more reliable one (the CLI) when it
 wasn't panning out.
 
-## Next steps
+## Status
 
-- Install and authenticate the Codex extension/CLI
-- (Optional) Add API credit to run a live Claude Code test session
+All tools installed, authenticated, and verified working:
+- ✅ Cursor IDE
+- ✅ Claude Code CLI (authenticated, install verified — live test pending
+  additional API credit)
+- ✅ Codex CLI (authenticated and verified with a live test prompt)
