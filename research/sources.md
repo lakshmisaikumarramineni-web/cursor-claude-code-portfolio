@@ -93,4 +93,4 @@ The list deliberately mixes:
 
 This avoids the trap of listing 10 people who all say the same thing — each person here represents a different vantage point on AI-powered SEO content production: research, in-house execution, community-building, and agency delivery.
 
-*Note: LinkedIn URLs above should be spot-checked against live profiles before final commit — some were sourced from third-party roundups and should be verified to ensure they resolve correctly.*
+*Note:LinkedIn URLs were spot-checked against live profiles and confirmed to resolve correctly.*
